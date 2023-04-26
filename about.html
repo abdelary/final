@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Sen&display=swap" rel="stylesheet">
+
+   <script src="jquery-3.4.1 copy.js"></script>
+
+<body>
+   <header>
+         <h1>AsielPhotos</h1>
+   
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li>
+                  <a href="#">Porfolio ▾</a>
+                  <ul class="dropdown">
+                     <li><a href="wildlife.html">Wildlife</a></li>
+                     <li><a href="macro.html">Macro</a></li>
+                     <li><a href="land&arch.html">Landscape</a></li>
+                  </ul>
+               </li>
+
+            </ul>
+         </nav>
+   </header>
+      
+    <section>
+      <div class = "image">
+          <img src="Images/Macro/Macro6.jpg" alt="close up of a flower">
+      </div>
+      
+      <div class = "content">
+             <h2>About Me</h2>
+             <span></span>
+             <p>Yasser is a photographer and the owner of AsielPhotos. With his fascination with the beauty in the world around him, the father of three first began photographing as a hobby. Over the years he has accumulated a collection of numerous stunning photographs. </p>
+
+             <div class="drawer">
+               <h2><a href="#">Contact</a></h2>
+
+                  <div class="inner">
+                     <p>Unfortunately, I’m not a big social media guy. But you can contact me at yayasser3159@gmail.com </p>
+   
+                  </div>
+
+             </div>
+
+
+      </div>
+   </section>
+
+   <footer>
+      <small>All information and images &copy; AsielPhotos<br>
+      </small>
+   </footer>
+
+   <script>
+      $("div.drawer").click(function() {
+          $(this).find(".inner").slideToggle("slow");
+      });
+  </script>
+</body>
+</html>
+
+   

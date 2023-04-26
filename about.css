@@ -1,0 +1,208 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+body{
+   font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    background-color: #f4f4f4;
+    align-content: center;
+    min-height: 100vh;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    width: 85vw;
+    margin: 0 auto;
+}
+.image{
+    background: url("Macro6.jpg") center/cover no-repeat;
+}
+.content{
+    background: rgb(44, 42, 42);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+    color: aliceblue;
+    font-weight: bolder;
+}
+.content span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: aliceblue;
+}
+.links{
+    margin: 15px 0;
+}
+.links li{
+    border: 0.5px solid #777;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+.links li a{
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: rgb(68, 159, 240);
+}
+.links li:hover a{
+    color :rgb(68, 159, 240);
+}
+.vertical-line{
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+}
+.icons{
+    display: flex;
+    padding: 15px 0;
+}
+.icons li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.icons li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.icons li i:hover{
+    color: rgb(68, 159, 240);
+}
+
+
+
+
+
+
+
+
+
+
+.drawer {
+    background-color: white;
+	margin-bottom: 1em;
+	border: 2px solid black;
+	border-radius: 1em;
+    font-size: 125%;
+    width: 600px;
+}
+
+.drawer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.drawer a {
+    color: black;
+	padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+
+.drawer a:hover {
+	background-color: #999999;
+	border-radius: 15px;
+    color: white;
+}
+
+
+
+/* INNER DRAWER
+---------------------------- */
+
+.inner {
+	background-color: #EEEEEE;
+    border-top: 1px solid black;
+	line-height: 130%;
+	font-size: .9em;
+	padding: 1em 2em;
+	box-shadow: inset 0px 0px 25px #00000075;
+   display: none;
+}
+
+.inner p {
+    color: black;
+}
+
+.inner a,
+.inner a:hover {
+	padding: 0;
+	background-color: #EEEEEE;
+	
+}
+
+
+
+
+@media(max-width: 480px){
+    section{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .image{
+        height: 100vh;
+    }
+    .content{
+        height: 100vh;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .links li a{
+        font-size: 14px;
+    }
+    .links{
+        margin: 5px 0;
+    }
+    .links li{
+        padding: 6px 10px;
+    }
+    .icons li i{
+        font-size: 15px;
+    }
+}
+ 
+
